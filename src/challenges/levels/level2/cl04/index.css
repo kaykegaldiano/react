@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', 'sans-serif';
+    background: #18161F;
+    color: #FFFFFF;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 72px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.header-menu-aluno {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btnInscricao {
+    padding: 16px 32px;
+    border-radius: 90px;
+    border: 1px solid #49445F;
+    background: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.main {
+    padding: 24px 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-text {
+    flex-basis: 53%;
+}
+
+.chamada {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #D6D4E2;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 56px;
+}
+
+.text > h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+}
+
+.text > p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #D6D4E2;
+}
+
+.btnCompra {
+    padding: 24px 48px;
+    border-radius: 90px;
+    border: #00D9C0;
+    background: #00D9C0;
+    color: #18161F;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.blur {
+    position: absolute;
+    width: 100px;
+    height: 700px;
+    left: 600px;
+    background: linear-gradient(135deg, #00D9C0 0%, #00CBCB 35.42%, #00BCD8 69.79%, #00A8E8 100%);
+    filter: blur(150px);
+    transform: rotate(-48deg);
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-text {
+        flex-basis: auto;
+    }
+
+    .section-image > img {
+        width: 100%;
+    }
+
+    .blur {
+        width: 100px;
+        height: 300px;
+        left: 100px;
+    }
+}

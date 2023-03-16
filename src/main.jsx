@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Comments } from './challenges/levels/level2/cl02/Comments'
+import { Hero } from './challenges/levels/level2/cl04/Hero'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Comments />
+    <Hero />
   </React.StrictMode>,
 )
