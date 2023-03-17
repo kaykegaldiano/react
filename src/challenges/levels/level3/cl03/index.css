@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', 'sans-serif';
+    background: #F5F4F6;
+    color: #262331;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 72px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    width: 640px;
+}
+
+.addTask {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.title-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.addTask-add {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.addTask-add input {
+    background: #FFFFFF;
+    border: 1px solid #D6D4E2;
+    border-radius: 16px;
+    padding: 16px;
+    outline: none;
+    flex: 1;
+}
+
+.addTask-add button {
+    background: #02B553;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 16px;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    
+    .addTask-title {
+        font-size: 16px
+    }
+
+    .addTask-add {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
