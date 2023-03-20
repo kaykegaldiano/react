@@ -72,9 +72,24 @@ body {
 }
 
 .task {
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.task > div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.task-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 @media screen and (max-width: 768px) {
